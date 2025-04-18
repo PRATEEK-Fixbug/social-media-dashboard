@@ -4,11 +4,12 @@ function Home() {
   const [metrics, setMetrics] = useState(null);
 
   useEffect(() => {
-    fetch("http://127.0.0.1:5000/api/metrics")
-      .then((response) => response.json())
+    fetch("https://social-media-dashboard-cyqa.onrender.com/api/metrics")
+      .then((res) => res.json())
       .then((data) => setMetrics(data))
-      .catch((error) => console.error("Error fetching metrics:", error));
+      .catch((err) => console.error("Failed to fetch metrics:", err));
   }, []);
+  
 
   return (
     <div className="home-content">
