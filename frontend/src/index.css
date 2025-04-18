@@ -1,0 +1,19 @@
+body, html, #root {
+  height: 100%;
+  margin: 0;
+}
+
+.bg-container {
+  background: url('/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+  backdrop-filter: blur(6px);
+  background-color: rgba(0, 0, 0, 0.5); /* fallback for unsupported browsers */
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  padding: 2rem;
+  backdrop-filter: blur(3px);
+}
